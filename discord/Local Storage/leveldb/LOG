@@ -1,0 +1,9 @@
+2025/03/14-01:35:10.696 8fe7 Reusing MANIFEST /home/vlvin/.config/user_config/discord/Local Storage/leveldb/MANIFEST-000001
+2025/03/14-01:35:10.702 8fe7 Recovering log #6
+2025/03/14-01:35:10.750 8fe7 Reusing old log /home/vlvin/.config/user_config/discord/Local Storage/leveldb/000006.log 
+2025/03/14-01:39:57.217 8fe8 Level-0 table #10: started
+2025/03/14-01:39:57.417 8fe8 Level-0 table #10: 3496766 bytes OK
+2025/03/14-01:39:57.470 8fe8 Delete type=0 #6
+2025/03/14-03:27:12.690 8fe7 Level-0 table #12: started
+2025/03/14-03:27:12.807 8fe7 Level-0 table #12: 17212 bytes OK
+2025/03/14-03:27:12.859 8fe7 Delete type=0 #9

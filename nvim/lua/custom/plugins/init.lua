@@ -6,6 +6,7 @@ return {
   require 'custom.plugins.oil',
   require 'custom.plugins.flash',
   require 'custom.plugins.md-preview',
-  require 'custom.plugins.catppuccin',
+  require 'custom.plugins.colorscheme',
   require 'custom.plugins.vim-multi-cursors',
+  require 'custom.plugins.blink',
 }
