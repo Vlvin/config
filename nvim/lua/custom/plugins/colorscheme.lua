@@ -10,7 +10,7 @@ local colorschemes = {
     -- colorscheme config
     opts = {
       flavour = 'macchiato',
-      transparent_background = true,
+      transparent_background = false,
     },
   },
   tokyonight = {

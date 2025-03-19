@@ -158,6 +158,9 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
+-- Colors
+vim.o.termguicolors = true
+vim.o.ft = 'kitty'
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
@@ -170,6 +173,9 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 
 -- Exit from terminal
 vim.keymap.set('t', '<C-q>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
+
+-- Macros
+vim.keymap.set({ 'n', 'i' }, '<C-m>', '@q', { desc = 'Play macro at hot spot "q"' })
 
 -- TIP: Disable arrow keys in normal mode
 vim.keymap.set('n', '<left>', '<cmd>echo "Use h to move!!"<CR>')
@@ -225,11 +231,6 @@ require('lazy').setup({
   --
   -- Use the `dependencies` key to specify the dependencies of a particular plugin
 
-  require 'kickstart.plugins.which-key',
-  require 'kickstart.plugins.telescope',
-
-  -- LSP Plugins
-  require 'kickstart.plugins.lspconfig',
   {
     -- `lazydev` configures Lua LSP for your Neovim config, runtime and plugins
     -- used for completion, annotations and signatures of Neovim apis
@@ -243,23 +244,15 @@ require('lazy').setup({
     },
   },
 
+  require 'kickstart.plugins.which-key',
+  require 'kickstart.plugins.telescope',
+  require 'kickstart.plugins.lspconfig',
   require 'kickstart.plugins.conform',
-
   require 'kickstart.plugins.comments',
   require 'kickstart.plugins.mini',
   require 'kickstart.plugins.treesitter',
-  -- require 'kickstart.plugins.debug',
-  -- require 'kickstart.plugins.indent_line',
-  -- require 'kickstart.plugins.lint',
   require 'kickstart.plugins.autopairs',
-  -- require 'custom.plugins.vim-multi-cursors',
-  -- require 'custom.plugins.oil',
-  -- require 'custom.plugins.flash',
-  -- require 'custom.plugins.md-preview',
-  -- require 'custom.plugins.catppuccin',
-  -- require 'custom.plugins.noice',
   require 'custom.plugins',
-  -- require 'kickstart.plugins.neo-tree',
   require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
 }, {
   ui = {

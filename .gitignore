@@ -1,8 +1,18 @@
-.skypeforlinux/
-.unity3d
-.Electron
-.autostart
-.discord
-.ncspot
-.yay
+# Ignore everything
+*
 
+# whitelist
+!alacritty/
+!kitty/
+!btop/
+!cava/
+!fastfetch/
+!hypr/
+!i3/
+!kitty/
+!mpv/
+!nvim/
+!qutebrowser/
+!rofi/
+!tmux/
+!waybar/
