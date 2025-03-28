@@ -9,4 +9,7 @@ return {
   require 'custom.plugins.colorscheme',
   require 'custom.plugins.vim-multi-cursors',
   require 'custom.plugins.blink',
+  require 'custom.plugins.hardtime',
+  require 'custom.plugins.soiluml',
+  -- require 'custom.plugins.plantuml',
 }
