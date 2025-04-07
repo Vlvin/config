@@ -34,6 +34,7 @@ return {
           },
         },
       },
+      nil_ls = {}, -- shish nix lsp
       lua_ls = {
         -- cmd = { ... },
         -- filetypes = { ... },
@@ -205,6 +206,7 @@ return {
       'ruff', -- linter
       -- C/C++
       'clang-format', -- formater
+      'nixfmt', -- nix formater
     })
     require('mason-tool-installer').setup { ensure_installed = ensure_installed }
   end,

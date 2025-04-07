@@ -158,6 +158,15 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
+-- fold blocks
+-- vim.o.foldenable = true
+-- vim.o.foldlevel = 99
+-- vim.o.foldmethod = 'expr'
+-- vim.o.foldexpr = 'v:lua.vim.lsp.foldexpr()'
+-- vim.o.foldtext = ''
+-- vim.o.foldcolumn = '0'
+-- vim.o.fillchars:append { fold = '' }
+
 -- Colors
 vim.o.termguicolors = true
 vim.o.ft = 'kitty'

@@ -31,9 +31,10 @@ local colorschemes = {
     },
   },
 }
+colorschemes['gruvbox-material'] = { 'sainnhe/gruvbox-material' }
 
 -- To change your coloscheme just change this variable to any index in colorschemes (e.g. tokyonight, catppuccin)
-local name = 'catppuccin'
+local name = 'gruvbox-material'
 local link = colorschemes[name][1]
 local opts = colorschemes[name].opts
 
@@ -42,7 +43,9 @@ return {
   name = name,
   priority = 1000,
   config = function()
-    require(name).setup(opts or {})
+    pcall(function()
+      require(name).setup(opts or {})
+    end)
     vim.cmd.colorscheme(name)
   end,
 }
